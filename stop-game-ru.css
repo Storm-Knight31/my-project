@@ -90,6 +90,13 @@ div {
   text-decoration: none;
 }
 
+.small-text {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  
+}
 /*======================================================================================
                                      Footer
 =======================================================================================*/
@@ -111,7 +118,7 @@ footer {
 
 
 
-/*---------------------Columns------------------------*/
+/*=========================Columns============================*/
 
 .footer-column a {
   color: white;
@@ -135,7 +142,7 @@ footer {
   margin-bottom: 12px;
 }
 
-/*------------------------Icons-------------------------*/
+/*===========================Icons=========================*/
 
 .social-icons {
   height: 40px;
@@ -144,15 +151,38 @@ footer {
 
 #icons {
   margin-left: 650px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 #arrow-down {
   height: 30px;
   margin-left: 900px;
-  margin-top: 45px;
+  margin-top: 20px;
 }
 
+/*=================================Footer-dowm=================================*/
+
+.copyright {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-down {
+  color: white;
+  margin-left: px;
+  margin-top: 80px;
+}
+
+#r18 {
+  height: 32px;
+  margin-left: 455px;
+  margin-right: 30px;
+  margin-bottom: 35px;
+}
+
+#bold {
+  font-weight: bold;
+}
 
 
 
