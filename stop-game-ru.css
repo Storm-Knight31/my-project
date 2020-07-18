@@ -10,7 +10,7 @@
 /*===================================================================================
                                         Header
 ====================================================================================*/                                                           
-header {
+#header {
     background: #151A1C;
     height: 64px;
     padding-top: 8px;
@@ -75,10 +75,6 @@ header {
     font-size: 14px;
 }
 /*==================================================================================*/
- 
-div {
-    vertical-align: top;
-}
 
 .inline-block {
    display: inline-block;
@@ -105,8 +101,10 @@ html,
 body {
   height: 100%;
 }
+
 #wrap {
   min-height: 100%;
+  height: 100%;
 }
 
 footer {
@@ -116,7 +114,9 @@ footer {
   width: 100%;
 }
 
-
+body {
+  background-color: black;
+}
 
 /*=========================Columns============================*/
 
@@ -127,8 +127,10 @@ footer {
 }
 
 .footer-column {
-  margin-left: 350px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 50px;
+  width: 1061px;
 }
 
 
@@ -150,13 +152,15 @@ footer {
 }
 
 #icons {
-  margin-left: 650px;
+  margin-right: auto;
+  margin-left:auto;
   margin-top: 30px;
+  width: 486px;
 }
 
 #arrow-down {
   height: 30px;
-  margin-left: 900px;
+  margin-left: 50%;
   margin-top: 20px;
 }
 
@@ -169,7 +173,6 @@ footer {
 
 .footer-down {
   color: white;
-  margin-left: px;
   margin-top: 80px;
 }
 
@@ -184,6 +187,59 @@ footer {
   font-weight: bold;
 }
 
+.footer-right a {
+  color: white;
+  text-transform: uppercase;
+}
+
+.footer-right {
+  margin-left: 660px;
+  position: relative;
+  bottom: 50px;
+}
+
+.footer-right span {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/*=======================================Main======================================*/
 
 
+main {
+  min-height: 100%;
+  height: 100%;
+}
+
+
+/*======================================Aside=====================================*/
+#aside {
+  background-color: #f6f6f6;
+  width: 288px;
+  height: 100%;
+  margin-left: 19%;
+  min-height: 100%;
+}
+
+.title {
+  font-size: 32px;
+  font-family: Rubik, sans-serif;
+  font-weight: 300;
+  margin-bottom: 30px;
+  padding-top: 35px;
+}
+
+.aside-links a {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.aside-menu{
+  margin-left: 30px;
+}
 
