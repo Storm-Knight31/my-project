@@ -1,262 +1,317 @@
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-
-}
-
-/*===================================================================================
-                                        Header
-====================================================================================*/                                                           
-#header {
-    background: #151A1C;
-    height: 64px;
-    padding-top: 8px;
-    width: 100%;
-}
-
-/*=========================================================
-                            Меню
-==========================================================*/
-
-#logo {
-    margin-left: 32px;
-    margin-top: 10px;
-    vertical-align: top;
-    width: 160px; height: 28px;
-}    
-
-.text-from-menu {
-    position: relative;
-    top: 17px;
-    width: calc(100% - 350px);
-    text-align: center;
-
-}
-
-.text-from-menu a {
-   color: white;
-   margin-left: 37px;
-   font-family: 'Roboto', sans-serif;
-   text-transform: uppercase;
-   font-size: 14px;
-   text-decoration: none;
-}
-
-/*=========================================================
-                   Регистрація і стріми 
-==========================================================*/
-   
-#live::before {
-    position: absolute;
-    content: "";
-    width: 2px;
-    height: 32px;
-    left: -30px; top: -7px;
-    background-color: white;
-}
-#live {
-    margin-left: 20px;
-}
-
-#sign-in {
-    margin-right: 31px;
-}
-
-.register > a {
-    color: white;
-    vertical-align: top;
-    text-decoration: none;
-    top: 20px;
-    position: relative;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-}
-/*==================================================================================*/
-
-.inline-block {
-   display: inline-block;
-}
-
-.text-styles {
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-.small-text {
-  color: white;
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
-  text-decoration: none;
-}
-
-.link-styles a:hover {
-  color: red;
-}
-
-.wrapper {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/*======================================================================================
-                                     Footer
-=======================================================================================*/
-
-html,
-body {
-  height: 100%;
-}
-
-#wrap {
-  min-height: 100%;
-  height: 100%;
-}
-
-footer {
-  margin-top: -515px;
-  height: 515px;
-  background-color: #151A1C;
-  width: 100%;
-}
-
-body {
-  background-color: black;
-}
-
-/*=========================Columns============================*/
-
-.footer-column a {
-  color: white;
-  text-decoration: none;
-  padding-left: 100px;
-}
-
-.footer-column {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  width: 1245px;
-}
-
-
-.column-title {
-  text-transform: uppercase;
-  margin-bottom: 25px; 
-}  
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:500">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Rubik:300">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Rubik:700">
+    <meta charset="utf-8">
+    <title>StopGameRu</title>
+     <link rel="stylesheet" href="./stop-game-ru.css">
+     <link rel="stylesheet" href="./reset.css">
+ </head>
  
+ 
+ <body>
 
-.column-text {
-  margin-bottom: 12px;
-}
+  <header id="header">
+    
+    <div class="inline-block">
+    <a href="https://stopgame.ru/"><img id="logo" class="inline-block text-styles" src="images/stopgame.logo.png" width="auto" height="auto" alt="Главная"></a>
+    </div>
+       
+      <nav class="text-from-menu inline-block text-styles link-styles">
+        <a href="#" class="inline-block">Игры</a>
+        <a href="#" class="inline-block">Новости</a>
+        <a href="#" class="inline-block">Статьи</a>
+        <a href="#" class="inline-block">Видео</a>
+        <a href="#" class="inline-block">Читы</a>
+        <a href="#" class="inline-block">Блоги</a>
+        <a href="#" class="inline-block">Стримы</a>
+        <a href="#" class="inline-block">Помощь</a>
+        <a href="#" class="inline-block">Поиск</a>
+       </nav>    
+       
+       <nav class="register inline-block text-styles">  
+        <a href="#" id="sign-in">Войти</a>
+        <a href="#" id="live">Live</a>
+       </nav>
 
-.columns {
-  margin-left: 15px;
-}
-
-/*===========================Icons=========================*/
-
-.social-icons {
-  height: 40px;
-  margin-right: 5px;
-}
-
-#icons {
-  margin-right: auto;
-  margin-left:auto;
-  margin-top: 30px;
-  width: 486px;
-}
-
-#arrow-down {
-  height: 30px;
-  margin-left: 50%;
-  margin-top: 20px;
-}
-
-/*=================================Footer-dowm=================================*/
-
-.copyright {
-    color: white;
-    margin-bottom: 15px;
-}
-
-.footer-down {
-  color: white;
-  margin-top: 80px;
-}
-
-#r18 {
-  height: 32px;
-  margin-right: 30px;
-  margin-bottom: 60px;
-  margin-left: 78px;
-}
-
-#bold {
-  font-weight: bold;
-}
-
-.footer-right a {
-  color: white;
-  text-transform: uppercase;
-}
-
-.footer-right {
-  margin-left: 660px;
-  position: relative;
-  bottom: 50px;
-}
-
-.footer-right span {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-/*=======================================Main======================================*/
-
-main {
-  min-height: 100%;
-  height: 100%;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/*======================================Aside=====================================*/
-
-#aside {
-  background-color: #f6f6f6;
-  width: 288px;
-  height: 100%;
-  min-height: 100%;
-}             
-            
-.title {
-  font-size: 32px;
-  font-family: Rubik, sans-serif;
-  font-weight: 300;
-  margin-bottom: 30px;
-  padding-top: 35px;
-}
-
-.aside-links a {
-  display: block;
-  font-family: 'Roboto', sans-serif;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 14px;
-  color: black;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-
-.aside-menu{
-  margin-left: 30px;
-}
+  </header>
 
 
+
+
+<main class="wrapper link-styles">
+   <!-------------------------Aside------------------------>
+  
+   <aside id="aside" class="inline-block">
+     
+   <div class="aside-menu">
+
+    <div class="title">
+      Статьи
+    </div>
+    
+    <div class="aside-links link-styles">
+       
+      <a href="#">Все</a>
+       
+      <a href="#">Обзоры</a>
+       
+      <a href="#">Превью</a>
+        
+      <a href="#">Первая полоса</a>
+        
+      <a href="#">Интервью </a>
+        
+    </div>
+  
+   </div> 
+  
+  </aside> 
+
+  <!-------------------------Content-------------------------->
+<div class="content inline-block">
+  
+  <div class="breadcrumb">
+  <a href="#">Главная</a>
+        /
+  <a href="#">Статьи</a>
+  </div> 
+  
+  <!----------------Title------------------>
+
+  <div class="content-title">
+     <h2>Игровые статьи</h2>
+  </div> 
+      
+  <!-------------------First---------------------->
+  
+  <section>
+    <a href="/show/112673/outward_the_soroboreans_review"></a>
+    <div class="content-info">
+      
+      <div class="content-type">
+        
+        <span class="replay-icon">
+          
+        </span>
+        
+        <span>
+         
+        </span>
+
+      </div>
+      
+        <span class="time">
+
+        </span>
+
+      <div class="views">
+        
+        <span class="icon-views">
+           <!--"число переглядів"-->
+        </span>
+
+      </div>
+
+      <span class="comments">
+ 
+      </span>
+
+    </div>
+   
+  </section>
+
+  <!------------------Second------------------->
+
+   <section>
+    <img src="" alt="">
+   </section>
+
+  <!------------------Third-------------------->  
+   
+  <section>
+    <img src="" alt="">
+   </section>
+
+  <!-----------------Fourth------------------->
+   
+  <section>
+     <img src="" alt="">
+  </section>
+  
+  <!------------------Fifth------------------>
+
+   <section>
+    <img src="" alt="">
+   </section>
+
+  <!------------------Sixth----------------->
+
+   <section>
+     <img src="" alt="">
+   </section>
+
+   <!--------------------------------------->
+
+</div>     
+</main>
+
+ </div>
+
+<footer class="inline-block">
+  
+  <div class="footer-column text-styles link-styles">
+    
+       <!----------------First Column----------------->
+    <div class="columns inline-block">
+        <div class="column-title">
+          <a class="column-title" href="#">Новости</a>
+        </div>
+        <div class="column-text">
+          <a href="#">Все</a>
+        </div>
+        <div class="column-text">
+          <a href="#">PC</a>
+        </div>
+        <div class="column-text">
+          <a href="#">Xbox One</a>
+        </div>
+        <div class="column-text">
+          <a href="#">Xbox Series X</a>
+        </div> 
+    </div>
+    
+        <!-----------Second Column-------------->
+
+    <div class="columns inline-block">
+        <div class="column-title">
+          <a class="column-title" href="#">Статьи</a>
+        </div>  
+        <div class="column-text">
+          <a href="#">Все</a>
+        </div>  
+        <div class="column-text">
+          <a href="#">Обзоры</a>
+        </div>  
+        <div class="column-text">
+          <a href="#">Превью</a>
+        </div>
+        <div class="column-text">
+          <a href="#">Первая полоса</a>
+        </div>
+    </div>
+
+        <!----------------Third Column----------------> 
+    <div class="columns inline-block">
+      <div class="column-title"> 
+        <a class="column-title" href="#">Видео</a>
+      </div>
+      <div class="column-text">
+        <a href="#">Все</a>
+      </div>
+      <div class="column-text">
+        <a href="#">Инфакт</a>
+      </div>
+      <div class="column-text">
+        <a href="#">Игрозор</a>
+      </div>
+      <div class="column-text">
+        <a href="#">Индикатор</a>
+      </div>
+    </div>
+
+        <!---------------Fourth Column------------------->
+
+    <div class="columns inline-block">
+      <div class="column-title">
+        <a class="column-title" href="#">Читы</a>
+      </div>
+      <div class="column-text">
+        <a href="#">Все</a>
+      </div>
+      <div class="column-text">
+        <a href="#">Коды</a>
+      </div>
+      <div class="column-text">
+        <a href="#">Прохождения</a>
+      </div>
+      <div class="column-text">
+        <a href="#">Советы и тактика</a>
+      </div>
+    </div>
+        
+        <!------------------Fifth Column------------------------>
+
+    <div class="columns inline-block">
+      <div class="column-title">
+        <a class="column-title" href="#">Блоги</a>
+      </div>
+      <div class="column-text">
+        <a href="#">Новое</a>
+      </div>
+      <div class="column-text">
+        <a href="#">Темы недели</a>
+      </div>
+      <div class="column-text">
+        <a href="#">Топ</a>
+      </div>
+      <div class="column-text">
+        <a href="#">Создать тему</a>
+      </div>
+    </div>
+  
+  </div>
+
+
+       <!--------------------------Icons--------------------------->
+
+       <img id="arrow-down" src="images/arrow-down.png" alt="">
+
+       <div id="icons">
+          <a href="#"><img class="social-icons" src="images/vk.png" alt=""></a>
+          <a href="#"><img class="social-icons" src="images/facebook.png" alt=""></a>
+          <a href="#"><img class="social-icons" src="images/youtube.png" alt=""></a>
+          <a href="#"><img class="social-icons" src="images/youtube.png" alt=""></a>
+          <a href="#"><img class="social-icons" src="images/twitter.png" alt=""></a>
+          <a href="#"><img class="social-icons" src="images/telegram.png" alt=""></a>
+          <a href="#"><img class="social-icons" src="images/telegram.png" alt=""></a>
+          <a href="#"><img class="social-icons" src="images/instagram.png" alt=""></a>
+          <a href="#"><img class="social-icons" src="images/steam.webp" alt=""></a>
+          <a href="#"> <img class="social-icons" src="images/twich.png" alt=""></a>
+        </div>
+ 
+     <!-------------------------------Footer-down------------------------------>
+      <div class="wrapper">   
+
+        <img id="r18" src="images/18+.png" alt="">
+         
+          <div class="inline-block footer-down small-text copyright">
+                  
+            <p class="copyright">
+              © 1999-2020 StopGame.ru
+            </p>
+            <p class="copyright">
+              Использование любых материалов сайта без согласования с администрацией запрещено.
+            </p>
+            <a class="inline-block copyright small-text" href="#">Дизайн сайта - <b id="bold">Proxima.agency</b></a>
+
+         <div class="footer-right">
+           
+          <a class="text-styles" href="#">о проекте</a>
+           <span>|</span>
+          <a class="text-styles" href="#">реклама на сайте</a>
+           <span>|</span>
+          <a class="text-styles" href="#">контакты</a>
+          
+         </div>
+      
+        </div>
+
+      </div>
+
+</footer>
