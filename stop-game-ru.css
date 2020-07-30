@@ -255,7 +255,12 @@ main {
 }
 
 .replay-icon {
-  background-image: url("./images/icon-replay.png")
+  background-image: url("images/icon-replay.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 27px;
+  height: 24px;
+  display: inline-block;
 }
 
 /*======================================Aside=====================================*/
@@ -289,4 +294,3 @@ main {
 .aside-menu{
   margin-left: 30px;
 }
-
