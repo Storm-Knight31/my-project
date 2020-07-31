@@ -102,13 +102,17 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.align-top {
+  vertical-align: top;
+}
 /*======================================================================================
                                      Footer
 =======================================================================================*/
 
 html,
 body {
-  height: 100%;
+  /* height: 100%; */
   font-family: 'Roboto', sans-serif;
 }
 
@@ -228,6 +232,11 @@ main {
   background-color: white;
 }
 
+.article {
+  margin-top: 25px;
+  margin-right: 20px;
+}
+
 .breadcrumb {
   margin-top: 40px;
   margin-bottom: 42px;
@@ -255,14 +264,81 @@ main {
 }
 
 .replay-icon {
-  background-image: url("images/icon-replay.png");
+  background-image: url("images/replay-icon.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-  width: 27px;
+  width: 23px;
   height: 24px;
   display: inline-block;
+  margin-top: 9px;
 }
 
+.image {
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 411px;
+  height: 232px;
+}
+
+.text {
+  vertical-align: top;
+  color: #ed1c24;
+  font-style: italic;
+  font-weight: 300;
+  margin-top: 13px;
+  margin-right: 8px;
+}
+
+.time {
+  color: #666;
+  font-style: italic;
+  font-weight: 300;
+  margin-top: 13px;
+  font-size: 12px;
+}
+
+.view-icon {
+  background-image: url("images/view-icon.png");
+  width: 25px;
+  height: 19px;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  margin-left: 13px;
+}
+
+.views-text {
+  font-style: italic;
+  font-weight: 300;
+  margin-top: 13px;
+  font-size: 12px;
+}
+
+.comments-text {
+  margin-top: 12px;
+  color: black;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 12px;
+  border-bottom: dotted black 1px;
+}
+
+.comments-icon {
+  background-image: url("images/comments-icon.png");
+  width: 21px;
+  height: 19px;
+  margin-top: 8px;
+  margin-left: 12px;
+}
+
+.article-title {
+  color: #151A1C;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.article-title-wrap {
+  width: 411px;
+}
 /*======================================Aside=====================================*/
 
 #aside {
