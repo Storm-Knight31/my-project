@@ -116,11 +116,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-#wrap {
-  min-height: 100%;
-  height: 100%;
-}
-
 footer {
   margin-top: -515px;
   height: 515px;
@@ -225,10 +220,6 @@ body {
 
 main {
   min-height: 100%;
-  height: 100%;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: white;
 }
 
@@ -263,6 +254,7 @@ main {
   vertical-align: top;
   padding-left: 30px;
   width: 900px;
+  margin-bottom: 90px;
 }
 
 .replay-icon {
